@@ -1,0 +1,16 @@
+<%- include("./partials/header.ejs")%>
+  <body>
+    <h1>Hello World....!</h1>
+    <h2><%=title%></h2>
+    <h3><%= new Date() %></h3>
+    <P>NAME: <%= myName%></P>
+    <P><%= array[0].color%></P>
+
+    <div>
+      <% for (let item of array) {%>
+      <p><%=item.color%></p>
+      <%} %>
+    </div>
+
+
+    <%- include("./partials/footer.ejs")%>

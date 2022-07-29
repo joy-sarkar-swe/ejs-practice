@@ -1,0 +1,11 @@
+<%- include("../partials/header.ejs")%>
+    <h1>Hello I am from Home....!</h1>
+
+    <div>
+        <% for (let item of array) {%>
+            <% if (item.status) {%>
+                <p><%=item.color%></p>
+            <%} %>
+        <%} %>
+      </div>
+<%- include("../partials/footer.ejs")%>
